@@ -2,47 +2,47 @@ package io.github.renanrcs.poo_uml.domain.model;
 
 public class Iphone implements MusicPlayer, Telephone, InternetBrowser{
     @Override
-    public void displayPage(String url) {
-        System.out.println("Exibindo página: " + url);
+    public String displayPage(String url) {
+        return "Exibindo página: " + url;
     }
 
     @Override
-    public void openNewTab() {
-        System.out.println("Nova aba adicionada.");
+    public String openNewTab() {
+        return "Nova aba adicionada.";
     }
 
     @Override
-    public void refreshPage() {
-        System.out.println("Página atualizada.");
+    public String refreshPage() {
+        return "Página atualizada.";
     }
 
     @Override
-    public void play() {
-        System.out.println("Reproduzindo música...");
+    public String play() {
+        return "Reproduzindo música...";
     }
 
     @Override
-    public void pause() {
-        System.out.println("Música pausada.");
+    public String pause() {
+        return "Música pausada.";
     }
 
     @Override
-    public void selectSong(String song) {
-        System.out.println("Música selecionada: " + song);
+    public String selectSong(String song) {
+        return "Música selecionada: " + song;
     }
 
     @Override
-    public void call(String number) {
-        System.out.println("Ligando para: " + number);
+    public String call(String number) {
+        return "Ligando para: " + number;
     }
 
     @Override
-    public void answer() {
-        System.out.println("Atendendo chamada.");
+    public String answer() {
+        return "Atendendo chamada.";
     }
 
     @Override
-    public void startVoicemail() {
-        System.out.println("Iniciando correio de voz.");
+    public String startVoicemail() {
+        return "Iniciando correio de voz.";
     }
 }
